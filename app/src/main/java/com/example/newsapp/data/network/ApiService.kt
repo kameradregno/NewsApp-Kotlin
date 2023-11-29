@@ -19,20 +19,21 @@ interface ApiService {
 
     @GET("/v2/everything")
     fun getAlQuranNews(
-        @Query("q") q: String = "Al-quran",
+        @Query("q") q: String = "Free Palestine",
         @Query("language") language: String = "en"
     ): Call<NewsResponse>
 
 
-    @GET("/v2/top-headlines")
+    @GET("/v2/everything")
     fun getAlJazeeraNews(
-        @Query("sources") sources: String = "al-jazeera-english"
+        @Query("q") q: String = "Islamic History",
+        @Query("language") language: String = "en"
     ): Call<NewsResponse>
 
 
     @GET("/v2/everything")
     fun getWarningForMuslimNews(
-        @Query("q") q: String = "anti islam",
+        @Query("q") q: String = "islamophobia",
         @Query("language") language: String = "en"
     ): Call<NewsResponse>
 

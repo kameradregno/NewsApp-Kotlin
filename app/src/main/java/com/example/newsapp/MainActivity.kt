@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         binding.vpNews.adapter = SectionPagerAdapter(this)
         val tabList = arrayOf(
             "Recent",
-            "Al-Qur'an",
-            "Al Jazeera",
-            "Warm for Muslims"
+            "Free Palestine",
+            "Islamic History",
+            "Contra\nMuslims"
         )
         TabLayoutMediator(binding.tabs, binding.vpNews) {tab, page ->
             tab.text = tabList[page]
